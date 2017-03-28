@@ -3,10 +3,12 @@
 $(document).ready(function(){
 
 	//animationClick('#logo','lightSpeedIn');
-
+/*
 	$('.navbar').addClass('animated fadeInUpBig');
 	animationHover('#bra','animated rotateOut');
 	$('.list-group').addClass('animated bounceInRight');
+*/
+    animationHover('#logo','animated rotateOut');
 
 	function animationHover(element, animation){
 	  element = $(element);
