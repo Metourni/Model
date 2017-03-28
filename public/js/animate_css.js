@@ -1,11 +1,11 @@
+
+
 $(document).ready(function(){
 
 	//animationClick('#logo','lightSpeedIn');
 
-	$('#logo').addClass('animated lightSpeedOut');
-	$('#logo').on('click',function(){
-		alert('hi');
-	});
+	$('.navbar').addClass('animated fadeInUpBig');
+	animationHover('#bra','animated rotateOut');
 
 	function animationHover(element, animation){
 	  element = $(element);
