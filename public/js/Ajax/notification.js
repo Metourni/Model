@@ -5,7 +5,7 @@ var theTitle = $('title').text();
 $(window).ready(function () {
     "use strict";
     notification();
-    /*setInterval(function(){notification()},15000); 15s*/
+    /*setInterval(function(){notification()},15000); 15s */
 
 });
 
