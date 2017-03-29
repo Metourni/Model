@@ -1,0 +1,39 @@
+/* Metourni Noureddine */
+
+#right-menu-btn{
+    min-width: 100%;
+}
+.list-group-item.active {
+    color: white;
+    background-color: #1d89ff;
+}
+.list-group-item.active:hover {
+    color: #1d89ff;
+    background-color: white;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+    #right-menu-btn{
+        display: block;
+    }
+    .right-menu{
+        display: none;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #right-menu-btn{
+        display: none;
+    }
+    .right-menu{
+        display: block;
+    }
+
+}
+
+
