@@ -73,9 +73,9 @@ function setTitleNotificationZero(){
 
 //==== Total Notification =====>
 function notification(){
-    var projectNotification = 7;
-    var eventNotification = 2;
-    var totalNotification = projectNotification + eventNotification;
+    var projectNotification = 0;
+    var eventNotification = 0;
+    var totalNotification = 0;
 
     /*
     Use ajax to get the number
