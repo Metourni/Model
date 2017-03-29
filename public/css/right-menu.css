@@ -12,6 +12,13 @@
     background-color: white;
 }
 
+.right-menu>.list-group>.list-group-item>.badge{
+    font-size: large;
+    color: white;
+    background: #fa3e3e;
+}
+
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
