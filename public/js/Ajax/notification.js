@@ -73,19 +73,43 @@ function setTitleNotificationZero(){
 
 //==== Total Notification =====>
 function notification(){
-    /*
-    ajax(
-        use ajax to get the number
-    );
-    */
-
     var projectNotification = 7;
     var eventNotification = 2;
     var totalNotification = projectNotification + eventNotification;
 
-    setProjectNotification(projectNotification);
-    setEventNotification(eventNotification);
-    setTitleNotification(totalNotification);
+    /*
+    Use ajax to get the number
+    */
+
+    $.ajax({
+
+        type: "POST",
+        url: "public/phpAjax/Notification.php",
+        dataType: 'json',
+        success: function (jsonNotification) {
+
+            // Request was sent
+            if (jsonNotification.error == '') {
+
+                projectNotification = jsonNotification.projectNotification;
+                eventNotification  = jsonNotification.eventNotification;
+                totalNotification = projectNotification + eventNotification;
+                setProjectNotification(projectNotification);
+                setEventNotification(eventNotification);
+                setTitleNotification(totalNotification);
+            }
+            // There was an error
+            else {
+
+            }
+
+        },
+        error: function () {
+
+        }
+    });
+
+
 
 }
 
