@@ -41,16 +41,60 @@ function setProjectNotification(val) {
 }
 
 function setProjectNotificationZero(){
+    var error = true;
+    /*
+    $.ajax({
+        type:'POST',
+        url:'public/phpAjax/Notification.php',
+        data : {req : "setProjectNotificationZero"},
+        dataType:'json',
+        success: function (jsonNotification) {
+            if(jsonNotification.error()==''){
+                var newTotalNotification = parseInt($('.eventNotification').text());
+                $('.projectNotification').text("0").show();
+                setTitleNotification(newTotalNotification);
+            }else{
+                error = false;
+            }
+        },
+        error:function(){
+            error = false;
+        }
+    });
+    */
+
     var newTotalNotification = parseInt($('.eventNotification').text());
     $('.projectNotification').text("0").show();
     setTitleNotification(newTotalNotification);
+    return error;
 }
 
 //==== Event Notification =====>
 function setEventNotification(val) {
+    var error = true;
+    /*
+    $.ajax({
+        type:'POST',
+        url:'public/phpAjax/Notification.php',
+        data : {req : "setEventNotificationZero"},
+        dataType:'json',
+        success: function (jsonNotification) {
+            if(jsonNotification.error()==''){
+                var newTotalNotification = parseInt($('.eventNotification').text());
+                $('.projectNotification').text("0").show();
+                setTitleNotification(newTotalNotification);
+            }else{
+                error = false;
+            }
+        },
+        error:function(){
+            error = false;
+        }
+    });*/
     var eventNotification = parseInt($('.eventNotification').text());
     var newEventNotification = eventNotification + val;
     $('.eventNotification').text(newEventNotification).show();
+    return error;
 }
 function setEventNotificationZero(){
     var newTotalNotification = parseInt($('.projectNotification').text());
@@ -59,6 +103,12 @@ function setEventNotificationZero(){
 }
 
 //==== title Notification =====>
+function TitleNotification() {
+    var projectNotification = parseInt($('.projectNotification').text());
+    var eventNotification = parseInt($('.eventNotification').text());
+    var newTotalNotification = eventNotification + projectNotification;
+    setTitleNotification(newTotalNotification);
+}
 function setTitleNotification(totalNotification) {
     if(totalNotification=="0"){
         setTitleNotificationZero()
@@ -93,10 +143,10 @@ function notification(){
 
                 projectNotification = jsonNotification.projectNotification;
                 eventNotification  = jsonNotification.eventNotification;
-                totalNotification = projectNotification + eventNotification;
                 setProjectNotification(projectNotification);
                 setEventNotification(eventNotification);
                 setTitleNotification(totalNotification);
+                TitleNotification();
             }
             // There was an error
             else {
