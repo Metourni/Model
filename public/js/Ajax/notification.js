@@ -144,7 +144,7 @@ function notification(){
 
                 projectNotification = jsonNotification.projectNotification;
                 eventNotification  = jsonNotification.eventNotification;
-                /*data : {req : "getAllNotificationZero"},*/
+                /*data : {req : "getAllNotificationZero"}, */
                 setProjectNotification(projectNotification);
                 setEventNotification(eventNotification);
                 setTitleNotification(totalNotification);
