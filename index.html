@@ -175,22 +175,28 @@
                     </div> <!-- end card-container -->
                     <div class="list-group">
                         <button type="button" class="list-group-item active">
-                            <span class="badge">3</span>
-                            Cras justo odio
+                            Publication
                         </button>
                         <button type="button" class="list-group-item">
-                            <span class="badge">1</span>
-                            Dapibus ac facilisis in
+                            Profile
                         </button>
-                        <button type="button" class="list-group-item">Morbi leo risus</button>
-                        <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                        <button type="button" class="list-group-item">Vestibulum at eros</button>
+                        <button type="button" class="list-group-item" id="right-menu-project-btn" onclick="setProjectNotificationZero()">
+                            <span class="badge projectNotification">0</span>
+                            Project
+                        </button>
+                        <button type="button" class="list-group-item" id="right-menu-event-btn" onclick="setEventNotificationZero()">
+                            <span class="badge eventNotification">0</span>
+                            Events
+                        </button>
+                        <button type="button" class="list-group-item">
+                            Guide
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="jumbotron">
-                    <h1>Hello, world!</h1>
+                    <h1>Hello, world!<p class="jumbotronP"></p></h1>
                     <p>Model HTML, CSS, JQUERY, And more by <span class="name">Metourni Noureddine</span></p>
                     <p><button class="bttn-fill bttn-lg bttn-primary" onclick="read_more_btn()">More</button></p>
                 </div>
@@ -229,6 +235,7 @@
         <script src="public/js/sweetalert.min.js"></script>
         <script src="public/js/myAlertSweet.js"></script>
         <script src="public/js/right-menu.js"></script>
+        <script src="public/js/Ajax/notification.js"></script>
 
 		<script src="public/js/main.js"></script>
 	<!-- End of include the scripts -->	

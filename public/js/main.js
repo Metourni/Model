@@ -4,3 +4,5 @@
  */
 
 
+var date= new Date();
+$('.jumbotronP').html(date.getFullYear()+"/"+date.getDay()+"/"+date.getDate()+" . .  .   "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
