@@ -71,6 +71,11 @@ function setProjectNotificationZero(){
 
 //==== Event Notification =====>
 function setEventNotification(val) {
+    var eventNotification = parseInt($('.eventNotification').text());
+    var newEventNotification = eventNotification + val;
+    $('.eventNotification').text(newEventNotification).show();
+}
+function setEventNotificationZero(){
     var error = true;
     /*
     $.ajax({
@@ -80,8 +85,8 @@ function setEventNotification(val) {
         dataType:'json',
         success: function (jsonNotification) {
             if(jsonNotification.error()==''){
-                var newTotalNotification = parseInt($('.eventNotification').text());
-                $('.projectNotification').text("0").show();
+                var newTotalNotification = parseInt($('.projectNotification').text());
+                $('.eventNotification').text("0").show();
                 setTitleNotification(newTotalNotification);
             }else{
                 error = false;
@@ -90,16 +95,12 @@ function setEventNotification(val) {
         error:function(){
             error = false;
         }
-    });*/
-    var eventNotification = parseInt($('.eventNotification').text());
-    var newEventNotification = eventNotification + val;
-    $('.eventNotification').text(newEventNotification).show();
-    return error;
-}
-function setEventNotificationZero(){
+    });
+    */
     var newTotalNotification = parseInt($('.projectNotification').text());
     $('.eventNotification').text("0").show();
     setTitleNotification(newTotalNotification);
+    return error;
 }
 
 //==== title Notification =====>
