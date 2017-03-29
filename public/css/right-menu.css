@@ -24,6 +24,9 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 992px) {
+    #meto{
+        display: block;
+    }
     #right-menu-btn{
         display: block;
     }
@@ -34,6 +37,9 @@
 
 
 @media (min-width: 992px) {
+    #meto{
+        display: none;
+    }
     #right-menu-btn{
         display: none;
     }
