@@ -3,3 +3,7 @@
     background-image: url("../images/jumbotron.png");
     background-size: cover;
 }
+
+.jumbotron span{
+    color: #05AD2C;
+}
