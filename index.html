@@ -3,7 +3,7 @@
 	<head>
         <!--- basic page needs -->
         <meta charset="utf-8">
-        <title>Model | WebMe</title>
+        <title>Model | WebMe </title>
         <meta name="description" content="This is a model assembled by Metourni Noureddine for simple pages ">
         <meta name="author" content="Metourni Noureddine">
         <!-- ================================================== -->
@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="public/css/sweetalert.css" />
         <link rel="stylesheet" href="public/css/right-menu.css" />
         <link rel="stylesheet" href="public/css/jumbotron.css" />
+        <link rel="stylesheet" href="public/css/inbox-gmail.css" />
 
         <link rel="stylesheet" href="public/css/main.css" />
         <link rel="stylesheet" href="public/css/normalize.css" />
@@ -173,7 +174,7 @@
                         </div> <!-- end card -->
                     </div> <!-- end card-container -->
                     <div class="list-group">
-                        <button type="button" class="list-group-item active">
+                        <button type="button" class="list-group-item active" href="profile.html">
                             Publication
                         </button>
                         <button type="button" class="list-group-item">
@@ -208,11 +209,30 @@
                     <a href="#top"><span></span>Back to Top</a>
                 </p>
             </div>
-
-
         </div>
 
-
+        <div class="container">
+            <div class="row">
+                <div id="inbox">
+                    <div class="fab btn-group show-on-hover dropup">
+                        <div data-toggle="tooltip" data-placement="left" title="Compose" style="margin-left: 42px;">
+                            <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-plus fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-pencil fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+                            </button></div>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Coffee"><i class="fa fa-coffee"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Reminders"><i class="fa fa-hand-o-up"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Invites"><i class="fa fa-ticket"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -235,6 +255,7 @@
         <script src="public/js/myAlertSweet.js"></script>
         <script src="public/js/right-menu.js"></script>
         <script src="public/js/Ajax/notification.js"></script>
+        <script src="public/js/inbox-gmail.js"></script>
 
 		<script src="public/js/main.js"></script>
 	<!-- End of include the scripts -->	
