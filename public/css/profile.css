@@ -1,0 +1,57 @@
+/* Background image */
+.image-profile-bg{
+    height: 300px;
+    overflow: hidden;
+    border-radius: 0 0 15px 15px;
+
+}
+.image-profile-bg img{
+    z-index: 0;
+    width: 100%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+}
+
+/*
+.fb-profile img.fb-image-lg{
+
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+
+}
+*/
+
+/* User image */
+.image-profile-user
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 15%;
+}
+.image-profile-userZ{
+    text-align: center;
+}
+.image-profile-user .thumbnail{
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 3px solid #2C93FF;
+    border-radius: 50%;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+@media (max-width:768px)
+{
+
+}

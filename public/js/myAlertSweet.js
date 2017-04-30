@@ -32,6 +32,9 @@ $('.img-circle').on('click',function () {
         text: "A custom <span style=\"color:#F8BB86\">html<span> message. " +
         "<br>" +
         "<img class=\"img-circle\" src="+img+"/>",
+        allowEscapeKey:true,
+        allowOutsideClick:true,
+        confirmButtonText : 'mehdi',
         html: true
     }) ;
 });

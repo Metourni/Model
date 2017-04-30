@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="public/css/right-menu.css" />
         <link rel="stylesheet" href="public/css/jumbotron.css" />
         <link rel="stylesheet" href="public/css/inbox-gmail.css" />
+        <link rel="stylesheet" href="public/css/sidebar.css" />
 
         <link rel="stylesheet" href="public/css/main.css" />
         <link rel="stylesheet" href="public/css/normalize.css" />
@@ -42,198 +43,211 @@
 		
 	<!-- Your code -->
 
+    <div class="wrapper">
+        <!-- Sidebar -->
 
-    <nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#" id="logo">Meto</a>
-			</div>
+        <!-- Page Content -->
+        <div id="content">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" id="logo">Meto</a>
+                    </div>
 
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-				</ul>
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button class="bttn-unite bttn-sm bttn-primary">Serch <span class="glyphicon glyphicon-search"></span></button>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Link</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button class="bttn-unite bttn-sm bttn-primary">Serch <span class="glyphicon glyphicon-search"></span></button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                Toggle Sidebar
+                            </button>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
 
-    <br>
-    <div class="container">
-        <div class="row">
+            <br>
+            <div class="container">
+                <div class="row">
 
-            <div class="col-md-4">
-                    <button class="bttn-fill bttn-lg bttn-primary" onclick="nav()" id="right-menu-btn">
-                        <center><span class="glyphicon glyphicon-th-list"></span></center>
-                    </button>
-                <br id="meto">
-                <div class="right-menu">
-                    <div class="card-container manual-flip" >
-                        <div class="card">
-                            <div class="front">
-                                <div class="cover">
-                                    <img src="public/images/rotating_card_thumb.png"/>
-                                </div>
-                                <div class="user">
-                                    <img class="img-circle" src="public/images/org.jpg"/>
-                                </div>
-                                <div class="content">
-                                    <div class="main">
-                                        <h3 class="name">Metourni Noureddine</h3>
-                                        <p class="profession">Web Developer</p>
-                                        <p class="text-center">"This is asimple model for <br>Your quick project <br>I hope it will be useful for you. "</p>
-                                    </div>
-                                    <div class="footer">
-                                        <button class="btn btn-simple" onclick="rotateCard()">
-                                            <i class="fa fa-mail-forward"></i> More information
-                                        </button>
-                                    </div>
-                                </div>
-                            </div> <!-- end front panel -->
-                            <div class="back">
-                                <div class="header">
-                                    <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
-                                </div>
-                                <div class="content">
-                                    <div class="main">
-                                        <h4 class="text-center">Job Description</h4>
-                                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
-
-                                        <div class="stats-container">
-                                            <div class="stats">
-                                                <h4>235</h4>
-                                                <p>
-                                                    Followers
-                                                </p>
+                    <div class="col-md-4">
+                        <button class="bttn-fill bttn-lg bttn-primary" onclick="nav()" id="right-menu-btn">
+                            <center><span class="glyphicon glyphicon-th-list"></span></center>
+                        </button>
+                        <br id="meto">
+                        <div class="right-menu">
+                            <div class="card-container manual-flip" >
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="public/images/rotating_card_thumb.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="public/images/org.jpg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Metourni Noureddine</h3>
+                                                <p class="profession">Web Developer</p>
+                                                <p class="text-center">"This is asimple model for <br>Your quick project <br>I hope it will be useful for you. "</p>
                                             </div>
-                                            <div class="stats">
-                                                <h4>114</h4>
-                                                <p>
-                                                    Following
-                                                </p>
-                                            </div>
-                                            <div class="stats">
-                                                <h4>35</h4>
-                                                <p>
-                                                    Projects
-                                                </p>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard()">
+                                                    <i class="fa fa-mail-forward"></i> More information
+                                                </button>
                                             </div>
                                         </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Job Description</h4>
+                                                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
 
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard()">
-                                        <i class="fa fa-reply"></i> Back
-                                    </button>
-                                    <div class="social-links text-center">
-                                        <a href="https://www.facebook.com/profile.php?id=100013748358742" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                        <a href="https://plus.google.com/u/0/109871420044870619320" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                        <a href="https://www.instagram.com/noureddinemeto/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
-                                    </div>
-                                </div>
-                            </div> <!-- end back panel -->
-                        </div> <!-- end card -->
-                    </div> <!-- end card-container -->
-                    <div class="list-group">
-                        <button type="button" class="list-group-item active" href="profile.html">
-                            Publication
-                        </button>
-                        <button type="button" class="list-group-item">
-                            Profile
-                        </button>
-                        <button type="button" class="list-group-item" id="right-menu-project-btn" onclick="setProjectNotificationZero()">
-                            <span class="badge projectNotification">0</span>
-                            Project
-                        </button>
-                        <button type="button" class="list-group-item" id="right-menu-event-btn" onclick="setEventNotificationZero()">
-                            <span class="badge eventNotification">0</span>
-                            Events
-                        </button>
-                        <button type="button" class="list-group-item">
-                            Guide
-                        </button>
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>235</h4>
+                                                        <p>
+                                                            Followers
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>114</h4>
+                                                        <p>
+                                                            Following
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>35</h4>
+                                                        <p>
+                                                            Projects
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard()">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                            <div class="social-links text-center">
+                                                <a href="https://www.facebook.com/profile.php?id=100013748358742" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://plus.google.com/u/0/109871420044870619320" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://www.instagram.com/noureddinemeto/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                            <div class="list-group">
+                                <button type="button" class="list-group-item active" href="profile.html">
+                                    Publication
+                                </button>
+                                <button type="button" class="list-group-item">
+                                    Profile
+                                </button>
+                                <button type="button" class="list-group-item" id="right-menu-project-btn" onclick="setProjectNotificationZero()">
+                                    <span class="badge projectNotification">0</span>
+                                    Project
+                                </button>
+                                <button type="button" class="list-group-item" id="right-menu-event-btn" onclick="setEventNotificationZero()">
+                                    <span class="badge eventNotification">0</span>
+                                    Events
+                                </button>
+                                <button type="button" class="list-group-item">
+                                    Guide
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="jumbotron">
+                            <h1>Hello, world!<p class="jumbotronP"></p></h1>
+                            <p>Model HTML, CSS, JQUERY, And more by <span class="name">Metourni Noureddine</span></p>
+                            <p><button class="bttn-fill bttn-lg bttn-primary" onclick="read_more_btn()">More</button></p>
+                        </div>
+                        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+                        <p id="back-top">
+                            <a href="#top"><span></span>Back to Top</a>
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8">
-                <div class="jumbotron">
-                    <h1>Hello, world!<p class="jumbotronP"></p></h1>
-                    <p>Model HTML, CSS, JQUERY, And more by <span class="name">Metourni Noureddine</span></p>
-                    <p><button class="bttn-fill bttn-lg bttn-primary" onclick="read_more_btn()">More</button></p>
-                </div>
-                <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
-                <p id="back-top">
-                    <a href="#top"><span></span>Back to Top</a>
-                </p>
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
-                <div id="inbox">
-                    <div class="fab btn-group show-on-hover dropup">
-                        <div data-toggle="tooltip" data-placement="left" title="Compose" style="margin-left: 42px;">
-                            <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+                <div class="container">
+                    <div class="row">
+                        <div id="inbox">
+                            <div class="fab btn-group show-on-hover dropup">
+                                <div data-toggle="tooltip" data-placement="left" title="Compose" style="margin-left: 42px;">
+                                    <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
                 <i class="fa fa-plus fa-stack-1x fa-inverse fab-primary"></i>
                 <i class="fa fa-pencil fa-stack-1x fa-inverse fab-secondary"></i>
             </span>
-                            </button></div>
-                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Coffee"><i class="fa fa-coffee"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Reminders"><i class="fa fa-hand-o-up"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Invites"><i class="fa fa-ticket"></i></a></li>
-                        </ul>
+                                    </button></div>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Coffee"><i class="fa fa-coffee"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Reminders"><i class="fa fa-hand-o-up"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Invites"><i class="fa fa-ticket"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+
+
 
 
 
@@ -256,6 +270,7 @@
         <script src="public/js/right-menu.js"></script>
         <script src="public/js/Ajax/notification.js"></script>
         <script src="public/js/inbox-gmail.js"></script>
+        <script src="public/js/sidebar.js"></script>
 
 		<script src="public/js/main.js"></script>
 	<!-- End of include the scripts -->	
