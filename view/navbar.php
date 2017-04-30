@@ -54,11 +54,11 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                 </li>
-                <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
-                    <span class="hamb-top"></span>
-                    <span class="hamb-middle"></span>
-                    <span class="hamb-bottom"></span>
-                </button>
+                <div class="hamburger hamburger--3dy-r" style="background: whitesmoke">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
