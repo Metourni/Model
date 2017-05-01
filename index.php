@@ -44,7 +44,7 @@
 		
 	<!-- Your code -->
 
-    <div id="wrapper" class="toggled">
+    <div id="wrapper">
         <!-- Sidebar -->
         <?php include_once 'view/sidebar.php';?>
         <!-- Page Content -->

@@ -54,7 +54,7 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                 </li>
-                <div class="hamburger hamburger--3dy-r" style="background: whitesmoke">
+                <div class="hamburger hamburger--slider-r " style="background: whitesmoke">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
