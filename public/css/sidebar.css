@@ -8,6 +8,14 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+#wrapper #page-content-wrapper{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
 
 #wrapper.toggled {
     padding-left: 250px;
